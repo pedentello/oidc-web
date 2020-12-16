@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consent</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/misEstilos.css" />
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/loginpage.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!--Inicio Header-->
+    <header>
+      <nav class="navbar navbar-default  sombra navbar-login limitePwd">
+        <div class="container limitePwd define">
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <div class="navbar-header">
+                <a class="navbar-brand logo"><img src="https://pf.santandernet.com.br/LOGBBR_NS_ENS/EarEstatico/LOGBBR_NS_ENS/ALP_LOGBBR_Presentacion/Images/logo_santander.png" alt="logo_santander"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fim Header-->
+    
+    <!--Inicio Main-->
+    <main>
+      <div class="container limitePwd ">
+        <div class="col-xs-12 col-md-12 main isban-main-content">
+          <div class="row space-b">
+            <div class="col-12 col-xs-12 col-md-5 col-lg-3 col-offset-0 col-xs-offset-0 col-md-offset-3 col-lg-offset-4">
+                <h1>Bem-vindo ao Santander</h1>
+                <div class="isban-blocos logon-blocos sombra">
+                  </br>
+                  <p id="profile-name" class="profile-name-card-new">
+                    Identificamos que você está se conectando ao nosso parceiro <strong><%= appName %></strong>.
+                  </p>
+                  </br>
+                  <p id="profile-name" class="profile-name-card-new">
+                    <strong><%= appName %></strong> deseja se conectar em sua conta para realizar as seguintes transações: 
+                    </br></br>
+                    <ul style="padding-left: 16px;">
+                      <li style="list-style:disc !important">Obter informações do seu cadastro</li>
+                      <li style="list-style:disc !important">Consultar o seu CPF</li>
+                    </ul>
+                    </br>
+                  </p>
+                  <form class="form-signin" action="/validateLoginInfo" method="POST">
+                    <div class="control-group">
+                      <input type="hidden" id="sessionid" name="sessionid" value="<%= txid %>" />
+                      <input type="hidden" id="oidcroot" name="oidcroot" value="<%= oidcroot %>" />
+                      <input type="hidden" id="client_id" name="client_id" value="<%= client_id %>" />
+                      <input type="hidden" id="response_type" name="response_type" value="<%= response_type %>" />
+                      <input type="hidden" id="requestedScopes" name="requestedScopes" value="<%= req_scope %>" />
+                      <input type="hidden" id="redirect_uri" name="redirect_uri" value="<%= redirect_uri %>" />
+                      <input type="hidden" id="clientState" name="clientState" value="<%= req_state %>" />
+                      <input type="hidden" id="appName" name="appName" value="<%= appName %>" />
+                      <input type="hidden" id="appLogoUrl" name="appLogoUrl" value="<%= appLogoUrl %>" />
+                      <input type="hidden" id="display" name="display" value="<%= display %>" />
+                      <input type="hidden" id="login_hint" name="login_hint" value="<%= login_hint %>" />
+                    </div>
+                    <div class="float-right">
+                      <button class="btn btn-secondary btn-cancel" type="submit" name="submit" value="no">
+                        Cancelar
+                      </button>
+                      <button class="btn btn-default btn-signin" type="submit" name="submit" value="yes">
+                          <%= action %>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+    <!--Fim Main-->
+
+  </div>
+
+ <!--Inicio Footer-->
+ <footer class="limitePwd">
+  <div class="footer limitePwd">
+    <div class="container limitePwd define">
+      <p>Banco Santander (Brasil) S.A - CNPJ: 90.400.888/0001-42 - Av Presidente Juscelino Kubitscheck, 2041/2235 - Bloco A, Vila Olímpia, São Paulo /SP - CEP 04543-011</p>
+    </div>
+  </div>
+</footer>
+<!--Fim Footer-->
+  
+</body>
+</html>

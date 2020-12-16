@@ -1,0 +1,343 @@
+.btn-default:hover[disabled] {
+  background-color: #42555e;
+}
+.btnNoMouseDis[disabled] {
+  cursor: default;
+  box-shadow: border-box;
+  background: #42555e;
+  transition: none;
+}
+
+.button_instalarMas {
+  font-family: inherit;
+  text-align: center;
+  color: #da1a1a;
+  font-size: 12px;
+  background: none;
+  border: white solid;
+  cursor: pointer;
+}
+
+.logo {
+  background: transparent; /*height: 55px;*/
+}
+
+.logo11 {
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.center-layout2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center-layout2 header {
+  height: 55px;
+  background: #fb2600;
+}
+
+.logo {
+  float: left;
+}
+
+.logo2 {
+  float: right;
+}
+
+.top-up {
+  border: 1px solid #dddddd;
+  background: white;
+  padding: 10px 10px;
+  margin: 10px 7px;
+  text-align: left;
+}
+
+.center-up {
+  border: 1px solid #dddddd;
+  background: white;
+  padding: 10px 10px;
+  margin: 10px 7px;
+  text-align: left;
+}
+
+.center-up h3 {
+  color: #ed2228;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 0 0 12px 0;
+}
+
+.isban-main-content .btn-voltar {
+  background: none;
+  text-decoration: underline;
+  border: none;
+  color: #42555e;
+}
+
+.u57 {
+  left: 30%;
+  position: relative;
+  top: 100px;
+  visibility: visible;
+  z-index: 1003;
+  width: 540px;
+}
+.u57_state0 {
+  position: relative;
+  background-image: none;
+}
+.u57_state0_content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+.u58 {
+  position: absolute;
+  width: 537px;
+  height: 211px;
+  font-family: "Roboto Regular", "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+.u58_img {
+  position: absolute;
+  width: 537px;
+  height: 211px;
+}
+.u58_0 {
+  position: absolute;
+  width: 537px;
+  height: 250px;
+  font-family: "Roboto Regular", "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #999999;
+  text-align: left;
+}
+.u58_0_img {
+  position: absolute;
+  width: 537px;
+  height: 250px;
+}
+.u59 {
+  position: absolute;
+  left: 60px;
+  top: 25px;
+  width: 417px;
+  word-wrap: break-word;
+}
+.u62 {
+  position: absolute;
+  top: 131px;
+  width: 537px;
+  height: 10px;
+}
+.u62_start {
+  position: absolute;
+  top: -5px;
+  width: 18px;
+  height: 20px;
+}
+.u62_end {
+  position: absolute;
+  left: 520px;
+  top: -5px;
+  width: 18px;
+  height: 20px;
+}
+.u62_line {
+  position: absolute;
+  top: 5px;
+  width: 537px;
+  height: 1px;
+}
+.u62_0 {
+  position: absolute;
+  top: 170px;
+  width: 537px;
+  height: 10px;
+}
+.u63 {
+  position: absolute;
+  left: 440px;
+  top: 154px;
+  width: 82px;
+  height: 39px;
+  font-family: "Roboto Medium", "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+}
+.u63_0 {
+  position: absolute;
+  left: 440px;
+  top: 193px;
+  width: 82px;
+  height: 39px;
+  font-family: "Roboto Medium", "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+}
+.u63_img {
+  position: absolute;
+  width: 82px;
+  height: 39px;
+}
+.u64 {
+  position: absolute;
+  top: 11px;
+  width: 78px;
+  word-wrap: break-word;
+}
+.u67 {
+  /* position:absolute;
+  left:13px;
+  top:48px;
+  width:56px;
+  height:53px; */
+}
+.u67_0 {
+  position: absolute;
+  left: 13px;
+  top: 67px;
+  width: 56px;
+  height: 53px;
+}
+.u67_img {
+  position: absolute;
+  width: 32px;
+  height: 36px;
+  top: 15px;
+  left: 15px;
+}
+.u68 {
+  position: absolute;
+  left: 2px;
+  top: 18px;
+  width: 52px;
+  visibility: hidden;
+  word-wrap: break-word;
+}
+.u69 {
+  position: absolute;
+  left: 20px;
+  top: 157px;
+  width: 450px;
+  height: 32px;
+  font-family: "Tahoma Regular", "Tahoma";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 11px;
+  color: #666666;
+  line-height: 16px;
+}
+.u69_0 {
+  position: absolute;
+  left: 20px;
+  top: 196px;
+  width: 450px;
+  height: 32px;
+  font-family: "Tahoma Regular", "Tahoma";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 11px;
+  color: #666666;
+  line-height: 16px;
+}
+.u69_img {
+  position: absolute;
+  width: 450px;
+  height: 32px;
+}
+.u70 {
+  position: absolute;
+  width: 450px;
+  word-wrap: break-word;
+}
+.u71 {
+  position: absolute;
+  left: 440px;
+  top: 154px;
+  width: 82px;
+  height: 39px;
+  background-image: url("../Images/transparent.gif");
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-popup {
+  align-items: flex-start;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(66, 85, 94);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgb(204, 204, 204);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(204, 204, 204);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(204, 204, 204);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(204, 204, 204);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: robotoRegular;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  touch-action: manipulation;
+  transition-delay: 0s;
+  transition-property: all;
+  transition-timing-function: linear;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-appearance: none;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: none;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+.btn-popup {
+  border: 0;
+}
+.nopadding {
+  padding: 0 !important;
+}
+.form-control {
+  height: 35px !important;
+}

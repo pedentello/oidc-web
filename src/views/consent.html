@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consent</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/misEstilos.css" />
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/loginpage.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!--Inicio Header-->
+    <header>
+      <nav class="navbar navbar-default  sombra navbar-login limitePwd">
+        <div class="container limitePwd define">
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <div class="navbar-header">
+                <a class="navbar-brand logo"><img src="https://pf.santandernet.com.br/LOGBBR_NS_ENS/EarEstatico/LOGBBR_NS_ENS/ALP_LOGBBR_Presentacion/Images/logo_santander.png" alt="logo_santander"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fim Header-->
+
+    <!--Inicio Main-->
+    <main>
+      <div class="container limitePwd define">
+          <div class="col-xs-12 col-md-12 main isban-main-content">
+            <div class="row space-b">
+              <div class="col-12 col-xs-12 col-md-5 col-lg-3 col-offset-0 col-xs-offset-0 col-md-offset-3 col-lg-offset-4">
+                <div class="isban-blocos logon-blocos sombra">
+                  </br>
+                  <p id="profile-name" class="profile-name-card-new">
+                    O parceiro <strong><%= appName %></strong> poderá acessar sua conta para consultar as seguintes informações: </br>
+
+                    <ul style="padding-left: 16px;">
+                        <li style="list-style:disc !important">Obter informações do seu cadastro</li>
+                        <li style="list-style:disc !important">Consultar o seu CPF</li>
+                        <li style="list-style:disc !important">Consultar o seu nome e sua data de nascimento</li>
+                    </ul>
+                    
+                  </p>
+                  </br>
+                  <p id="profile-name" class="profile-name-card-new-bold">
+                    Um código de verificação foi enviado para o seu celular.</br>
+                    Digite-o abaixo:
+                  </p>
+                <form class="form-signin" action="/grantConsent" method="POST">
+                  <input type="password" id="inputPassword2" name="password2" class="form-control" placeholder="Seu código" required />
+                  </br>
+                  <div class="control-group">
+                    <input type="hidden" id="sessionid" name="sessionid" value="<%= txid %>" />
+                    <input type="hidden" id="oidcroot" name="oidcroot" value="<%= oidcroot %>" />
+                    <input type="hidden" id="response_type" name="response_type" value="<%= response_type %>" />
+                    <input type="hidden" id="requestedScopes" name="requestedScopes" value="<%= req_scope %>" />
+                    <input type="hidden" id="redirect_uri" name="redirect_uri" value="<%= redirect_uri %>" />
+                    <input type="hidden" id="clientState" name="clientState" value="<%= req_state %>" />
+                    <input type="hidden" id="appName" name="appName" value="<%= appName %>" />
+                    <input type="hidden" id="reference" name="reference" value="<%= reference %>"
+                  />
+                    <input type="hidden" id="userProfile" name="userProfile" value="<%= userProfile %>" />
+                  </div>
+                  <% if (errorMessage) { %>
+                    <div class="alert alert-danger" role="alert">
+                      <%= errorMessage %>
+                    </div>
+                    <% } %>
+            
+                    <button class="btn btn-secondary btn-cancel" type="submit" name="submit" value="no">
+                      Recusar
+                    </button>
+
+                    <button class="btn btn-default btn-signin" type="submit" name="submit" value="yes">
+                     <%= action %>
+                    </button> 
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+    <!--Fim Main-->
+
+  </div>
+
+  <!--Inicio Footer-->
+  <footer class="limitePwd">
+    <div class="footer limitePwd">
+      <div class="container limitePwd define">
+        <p>Banco Santander (Brasil) S.A - CNPJ: 90.400.888/0001-42 - Av Presidente Juscelino Kubitscheck, 2041/2235 - Bloco A, Vila Olímpia, São Paulo /SP - CEP 04543-011</p>
+      </div>
+    </div>
+  </footer>
+  <!--Fim Footer-->
+</body>
+</html>
