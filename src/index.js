@@ -653,7 +653,7 @@ process.on("uncaughtException", function (err) {
   console.log(err.stack);
 });
 
-var httpPort = process.env.PORT || 8082;
+var httpPort = process.env.PORT || 8080;
 app.listen(httpPort, function () {
   console.log("Listening on port " + httpPort);
 });
